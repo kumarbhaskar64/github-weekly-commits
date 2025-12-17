@@ -25,7 +25,7 @@ class WeeklyCommitsRequest extends FormRequest
         return [
             'since' => ['nullable', 'date_format:Y-m-d'],
             'until' => ['nullable', 'date_format:Y-m-d', 'after_or_equal:since'],
-            'max_pages' => ['nullable', 'integer', 'min:1', 'max:500'],
+            'max_pages' => ['nullable', 'integer', 'min:1', 'max:50'],
         ];
     }
 
