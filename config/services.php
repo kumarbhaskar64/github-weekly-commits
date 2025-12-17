@@ -31,4 +31,10 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'github' => [
+        'token' => env('GITHUB_TOKEN'),
+        'max_range_days' => (int) env('GITHUB_MAX_RANGE_DAYS', 180),
+        'max_pages_default' => (int) env('GITHUB_MAX_PAGES_DEFAULT', 20),
+    ],
+
 ];
